@@ -1,3 +1,7 @@
+import loadingBar from './main/loadingBar.js';
+import csrf from './csrf_protection.js';
+import $ from 'jquery';
+
 /**
  * @description This module communicates with Lychee's API
  */
@@ -184,3 +188,5 @@ api.getRawContent = function (url, callback) {
 		error: errorHandler,
 	});
 };
+
+export default api;

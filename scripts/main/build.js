@@ -1,3 +1,10 @@
+import $ from 'jquery';
+import album from './album.js';
+import lychee from './lychee.js';
+import tabindex from './tabindex.js';
+import { SmartAlbumID } from '../3rd-party/backend.js';
+import { sprintf } from 'sprintf-js';
+
 //noinspection HtmlUnknownTarget
 
 /**
@@ -655,3 +662,5 @@ build.u2f = function (credential) {
 		</div>
 		`;
 };
+
+export default build;

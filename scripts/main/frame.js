@@ -1,3 +1,6 @@
+import lychee from './lychee.js';
+import api from '../api.js';
+
 const frame = {
 	/** @type {?Photo} */
 	photo: null,
@@ -194,3 +197,5 @@ frame.resize = function () {
 		frame._dom.image.sizes = "" + width + "px";
 	}
 };
+
+export default frame;

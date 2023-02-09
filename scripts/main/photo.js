@@ -1,3 +1,16 @@
+import $ from 'jquery';
+import tabindex from './tabindex.js';
+import visible from './visible.js';
+import view from './view.js';
+import lychee from './lychee.js';
+import albums from './albums.js';
+import api from '../api.js';
+import loadingBar from './loadingBar.js';
+import { sprintf } from 'sprintf-js';
+import * as basicModal from '@lychee-org/basicmodal';
+import build from './build.js';
+import album from './album.js';
+
 /**
  * @description Takes care of every action a photo can handle and execute.
  */
@@ -1328,3 +1341,5 @@ photo.showDirectLinks = function (photoID) {
 		},
 	});
 };
+
+export default photo;

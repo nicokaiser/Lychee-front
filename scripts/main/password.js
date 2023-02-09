@@ -1,3 +1,8 @@
+import * as basicModal from '@lychee-org/basicmodal';
+import api from '../api.js';
+import lychee from './lychee.js';
+import visible from './visible.js';
+
 /**
  * @description Controls the access to password-protected albums and photos.
  */
@@ -79,3 +84,5 @@ password.getDialog = function (albumID, callback) {
 		},
 	});
 };
+
+export default password;

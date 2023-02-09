@@ -1,3 +1,11 @@
+import $ from 'jquery';
+import * as basicModal from '@lychee-org/basicmodal';
+import albums from './albums.js';
+import api from '../api.js';
+import loadingBar from './loadingBar.js';
+import lychee from './lychee.js';
+import view from './view.js';
+
 /**
  * @description Lets you change settings.
  */
@@ -550,3 +558,5 @@ settings.openTokenDialog = function () {
 		},
 	});
 };
+
+export default settings;

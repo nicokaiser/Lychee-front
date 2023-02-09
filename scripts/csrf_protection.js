@@ -23,3 +23,5 @@ csrf.getCSRFCookieValue = function () {
 	// Hence, we must remove the `%3D`.
 	return cookie ? cookie.split("=")[1].trim().replace(/%3D/g, "") : null;
 };
+
+export default csrf;

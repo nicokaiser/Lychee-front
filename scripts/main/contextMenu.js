@@ -1,3 +1,18 @@
+import $ from 'jquery';
+import * as basicContext from '@lychee-org/basiccontext';
+import album from './album.js';
+import albums from './albums.js';
+import api from '../api.js';
+import build from './build.js';
+import loadingBar from './loadingBar.js';
+import lychee from './lychee.js';
+import multiselect from './multiselect.js';
+import photo from './photo.js';
+import photoeditor from './photoeditor.js';
+import upload from './upload.js';
+import visible from './visible.js';
+import { SmartAlbumID } from '../3rd-party/backend.js';
+
 /**
  * @description This module is used for the context menu.
  */
@@ -786,3 +801,5 @@ contextMenu.close = function () {
 		multiselect.close();
 	}
 };
+
+export default contextMenu;

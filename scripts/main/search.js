@@ -1,3 +1,16 @@
+import lychee from './lychee.js';
+import $ from 'jquery';
+import album from './album.js';
+import albums from './albums.js';
+import api from '../api.js';
+import header from './header.js';
+import photo from './photo.js';
+import visible from './visible.js';
+import build from './build.js';
+import view from './view.js';
+import sidebar from './sidebar.js';
+import mapview from './mapview.js';
+
 /**
  * @description Searches through your photos and albums.
  */
@@ -9,7 +22,7 @@
  *
  * @type {string}
  */
-const SearchAlbumIDPrefix = "search";
+export const SearchAlbumIDPrefix = "search";
 
 /**
  * @typedef SearchAlbum
@@ -168,3 +181,5 @@ search.reset = function () {
 		lychee.goto();
 	}
 };
+
+export default search;

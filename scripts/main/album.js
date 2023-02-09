@@ -1,3 +1,20 @@
+import $ from 'jquery';
+import { SearchAlbumIDPrefix } from './search.js';
+import visible from './visible.js';
+import header from './header.js';
+import view from './view.js';
+import lychee from './lychee.js';
+import tabindex from './tabindex.js';
+import { SmartAlbumID } from '../3rd-party/backend.js';
+import photo from './photo.js';
+import albums from './albums.js';
+import api from '../api.js';
+import loadingBar from './loadingBar.js';
+import { sprintf } from 'sprintf-js';
+import * as basicModal from '@lychee-org/basicmodal';
+import mapview from './mapview.js';
+import password from './password.js';
+
 /**
  * @description Takes care of every action an album can handle and execute.
  */
@@ -1639,3 +1656,5 @@ album.deleteTrack = function () {
 		albumID: album.json.id,
 	});
 };
+
+export default album;

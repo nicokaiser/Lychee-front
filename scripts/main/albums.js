@@ -1,3 +1,11 @@
+import $ from 'jquery';
+import api from '../api.js';
+import visible from './visible.js';
+import header from './header.js';
+import view from './view.js';
+import lychee from './lychee.js';
+import tabindex from './tabindex.js';
+
 /**
  * @description Takes care of every action albums can handle and execute.
  */
@@ -238,3 +246,5 @@ albums.isEmpty = function () {
 albums.isSmartAlbumEmpty = function (smartAlbum) {
 	return !smartAlbum || !smartAlbum.photos || smartAlbum.photos.length === 0;
 };
+
+export default albums;

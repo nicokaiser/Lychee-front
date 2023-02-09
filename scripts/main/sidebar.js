@@ -1,3 +1,14 @@
+import $ from 'jquery';
+import album from './album.js';
+import build from './build.js';
+import header from './header.js';
+import lychee from './lychee.js';
+import photo from './photo.js';
+import search from './search.js';
+import visible from './visible.js';
+import { SearchAlbumIDPrefix } from './search.js';
+import { sprintf } from 'sprintf-js';
+
 /**
  * @description This module takes care of the sidebar.
  */
@@ -697,3 +708,5 @@ function DecimalToDegreeMinutesSeconds(decimal, type) {
 
 	return degrees + "° " + minutes + "' " + seconds + '" ' + direction;
 }
+
+export default sidebar;

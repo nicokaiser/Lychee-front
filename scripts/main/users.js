@@ -1,3 +1,8 @@
+import lychee from './lychee.js';
+import api from '../api.js';
+import loadingBar from './loadingBar.js';
+import view from './view.js';
+
 const users = {
 	/** @type {?UserDTO[]} */
 	json: null,
@@ -87,3 +92,5 @@ users.list = function () {
 		}
 	);
 };
+
+export default users;

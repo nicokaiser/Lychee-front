@@ -13,6 +13,8 @@
 		"url": "https://github.com/LycheeOrg/Lychee-front.git"
 	},
 	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
 		"start": "gulp watch",
 		"compile": "gulp",
 		"check-formatting": "prettier --check scripts/ styles/",
@@ -44,6 +46,7 @@
 		"@babel/core": "^7.20.7",
 		"@babel/preset-env": "^7.20.2",
 		"del": "^5.1.0",
+		"eslint": "^8.33.0",
 		"gulp": "^4.0.0",
 		"gulp-autoprefixer": "^6.0.0",
 		"gulp-babel": "^8.0.0",
@@ -54,8 +57,9 @@
 		"gulp-load-plugins": "^1.5.0",
 		"gulp-sass": "^5.1.0",
 		"gulp-uglify": "^3.0.2",
-		"prettier": "^2.8.3",
+		"prettier": "^2.8.4",
 		"sass": "^1.51.0",
-		"uglify-js": "^3.12.4"
+		"uglify-js": "^3.12.4",
+		"vite": "^4.1.1"
 	}
 }

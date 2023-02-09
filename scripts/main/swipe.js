@@ -1,3 +1,6 @@
+import album from './album.js';
+import lychee from './lychee.js';
+
 /**
  * @description Swipes and moves an object.
  */
@@ -99,3 +102,5 @@ swipe.stop = function (e, left, right) {
 	swipe.offsetX = 0;
 	swipe.offsetY = 0;
 };
+
+export default swipe;

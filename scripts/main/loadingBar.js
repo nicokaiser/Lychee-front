@@ -1,3 +1,6 @@
+import $ from 'jquery';
+import lychee from './lychee.js';
+
 /**
  * @description This module is used to show and hide the loading bar.
  */
@@ -99,3 +102,5 @@ loadingBar.hide = function (force) {
 		setTimeout(() => loadingBar.dom().removeClass(), 300);
 	}
 };
+
+export default loadingBar;

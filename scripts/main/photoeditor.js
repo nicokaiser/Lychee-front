@@ -1,8 +1,15 @@
+import $ from 'jquery';
+import album from './album.js';
+import api from '../api.js';
+import photo from './photo.js';
+import view from './view.js';
+
+
 /**
  * @description Takes care of every action a photoeditor can handle and execute.
  */
 
-photoeditor = {};
+const photoeditor = {};
 
 /**
  * @param {string} photoID
@@ -42,3 +49,5 @@ photoeditor.rotate = function (photoID, direction) {
 		}
 	);
 };
+
+export default photoeditor;

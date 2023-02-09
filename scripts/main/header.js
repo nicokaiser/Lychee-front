@@ -1,3 +1,20 @@
+import $ from 'jquery';
+import contextMenu from './contextMenu.js';
+import lychee from './lychee.js';
+import tabindex from './tabindex.js';
+import { SearchAlbumIDPrefix } from './search.js';
+import album from './album.js';
+import visible from './visible.js';
+import multiselect from './multiselect.js';
+import search from './search.js';
+import photo from './photo.js';
+import build from './build.js';
+import { SmartAlbumID } from '../3rd-party/backend.js';
+import leftMenu from './leftMenu.js';
+import sidebar from './sidebar.js';
+import photoeditor from './photoeditor.js';
+import * as basicModal from '@lychee-org/basicmodal';
+
 /**
  * @description This module takes care of the header.
  */
@@ -602,3 +619,5 @@ header.setEditable = function (editable) {
 	if (editable && !lychee.publicMode) $title.addClass("header__title--editable");
 	else $title.removeClass("header__title--editable");
 };
+
+export default header;

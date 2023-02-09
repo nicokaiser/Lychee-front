@@ -1,3 +1,10 @@
+import $ from 'jquery';
+import * as basicModal from '@lychee-org/basicmodal';
+import album from './album.js';
+import api from '../api.js';
+import csrf from '../csrf_protection.js';
+import lychee from './lychee.js';
+
 /**
  * @description Takes care of every action an album can handle and execute.
  */
@@ -1154,3 +1161,5 @@ upload.uploadTrack = function (files) {
 
 	upload.showProgressReportDialog(lychee.locale["UPLOAD_UPLOADING"], files, runUpload);
 };
+
+export default upload;

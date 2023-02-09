@@ -1,3 +1,24 @@
+import $ from 'jquery';
+import album from './album.js';
+import albums from './albums.js';
+import api from '../api.js';
+import build from './build.js';
+import header from './header.js';
+import justifiedLayout from 'justified-layout';
+import lychee from './lychee.js';
+import multiselect from './multiselect.js';
+import photo from './photo.js';
+import settings from './settings.js';
+import sharing from './sharing.js';
+import sidebar from './sidebar.js';
+import tabindex from './tabindex.js';
+import u2f from './u2f.js';
+import users from './users.js';
+import visible from './visible.js';
+import { SmartAlbumID } from '../3rd-party/backend.js';
+import { sprintf } from 'sprintf-js';
+import loadingBar from './loadingBar.js';
+
 /**
  * @description Responsible to reflect data changes to the UI.
  */
@@ -577,7 +598,7 @@ view.album = {
 				const jqPhotoElements = $(".justified-layout > div.photo");
 				const photoDefaultHeight = parseFloat(jqPhotoElements.css("--lychee-default-height"));
 
-				const layoutGeometry = require("justified-layout")(ratio, {
+				const layoutGeometry = justifiedLayout(ratio, {
 					containerWidth: containerWidth,
 					containerPadding: 0,
 					targetRowHeight: photoDefaultHeight,
@@ -2419,3 +2440,5 @@ view.u2f = {
 		},
 	},
 };
+
+export default view;

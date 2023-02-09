@@ -196,7 +196,7 @@
  *
  * @type {Readonly<{RECENT: string, STARRED: string, PUBLIC: string, UNSORTED: string, ON_THIS_DAY: string}>}
  */
-const SmartAlbumID = Object.freeze({
+export const SmartAlbumID = Object.freeze({
 	UNSORTED: "unsorted",
 	STARRED: "starred",
 	PUBLIC: "public",

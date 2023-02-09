@@ -1,3 +1,5 @@
+import jQuery from 'jquery';
+
 (function ($) {
 	const Swipe = function (el) {
 		const self = this;

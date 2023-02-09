@@ -1,3 +1,9 @@
+import $ from 'jquery';
+import api from '../api.js';
+import loadingBar from './loadingBar.js';
+import lychee from './lychee.js';
+import view from './view.js';
+
 let sharing = {
 	/** @type {?SharingInfo} */
 	json: null,
@@ -83,3 +89,5 @@ sharing.list = function () {
 		}
 	);
 };
+
+export default sharing;

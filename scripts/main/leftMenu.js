@@ -1,3 +1,15 @@
+import $ from 'jquery';
+import lychee from './lychee.js';
+import build from './build.js';
+import tabindex from './tabindex.js';
+import header from './header.js';
+import view from './view.js';
+import multiselect from './multiselect.js';
+import settings from './settings.js';
+import notifications from './notifications.js';
+import u2f from './u2f.js';
+import sharing from './sharing.js';
+
 /**
  * @description This module is used for the context menu.
  */
@@ -199,3 +211,5 @@ leftMenu.Sharing = function () {
 	leftMenu.closeIfResponsive();
 	sharing.list();
 };
+
+export default leftMenu;

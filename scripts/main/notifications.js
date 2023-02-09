@@ -1,3 +1,8 @@
+import api from '../api.js';
+import loadingBar from './loadingBar.js';
+import view from './view.js';
+import lychee from './lychee.js';
+
 const notifications = {
 	/** @type {?EMailData} */
 	json: null,
@@ -33,3 +38,5 @@ notifications.load = function () {
 		}
 	);
 };
+
+export default notifications;

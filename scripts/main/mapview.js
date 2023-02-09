@@ -1,3 +1,13 @@
+import lychee from './lychee.js';
+import $ from 'jquery';
+import album from './album.js';
+import api from '../api.js';
+import header from './header.js';
+import build from './build.js';
+import { SmartAlbumID } from '../3rd-party/backend.js';
+import loadingBar from './loadingBar.js';
+import tabindex from './tabindex.js';
+
 /**
  * @description This module takes care of the map view of a full album and its sub-albums.
  */
@@ -404,3 +414,5 @@ mapview.goto = function (elem) {
 
 	lychee.goto(albumID + "/" + photoID);
 };
+
+export default mapview;

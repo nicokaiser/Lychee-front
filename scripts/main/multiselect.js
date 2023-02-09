@@ -1,3 +1,14 @@
+import $ from 'jquery';
+import album from './album.js';
+import albums from './albums.js';
+import build from './build.js';
+import contextMenu from './contextMenu.js';
+import loadingBar from './loadingBar.js';
+import lychee from './lychee.js';
+import photo from './photo.js';
+import sidebar from './sidebar.js';
+import visible from './visible.js';
+
 /**
  * @description Select multiple albums or photos.
  */
@@ -456,3 +467,5 @@ multiselect.selectAll = function () {
 		});
 	}
 };
+
+export default multiselect;

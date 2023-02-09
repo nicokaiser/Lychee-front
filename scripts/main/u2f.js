@@ -1,3 +1,10 @@
+import * as basicModal from '@lychee-org/basicmodal';
+import api from '../api.js';
+import loadingBar from './loadingBar.js';
+import lychee from './lychee.js';
+import view from './view.js';
+import WebAuthn from '../3rd-party/WebAuthn.js';
+
 const u2f = {
 	/** @type {?WebAuthnCredential[]} */
 	json: null,
@@ -102,3 +109,5 @@ u2f.list = function () {
 		}
 	);
 };
+
+export default u2f;

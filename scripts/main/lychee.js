@@ -1,3 +1,25 @@
+import $ from 'jquery';
+import * as basicModal from '@lychee-org/basicmodal';
+import album from './album.js';
+import albums from './albums.js';
+import api from '../api.js';
+import contextMenu from './contextMenu.js';
+import header from './header.js';
+import leftMenu from './leftMenu.js';
+import loadingBar from './loadingBar.js';
+import mapview from './mapview.js';
+import multiselect from './multiselect.js';
+import photo from './photo.js';
+import search from './search.js';
+import sidebar from './sidebar.js';
+import tabindex from './tabindex.js';
+import u2f from './u2f.js';
+import view from './view.js';
+import visible from './visible.js';
+import { SearchAlbumIDPrefix } from './search.js';
+import { sprintf } from 'sprintf-js';
+import Mousetrap from 'mousetrap';
+
 /**
  * @description This module provides the basic functions of Lychee.
  */
@@ -1621,3 +1643,5 @@ lychee.addClickOrTouchListener = function (eventTarget, listener, options) {
 	eventTarget.addEventListener("click", listener, options);
 	eventTarget.addEventListener("touchend", listener, options);
 };
+
+export default lychee;

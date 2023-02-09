@@ -1,3 +1,10 @@
+import $ from 'jquery';
+import * as basicContext from '@lychee-org/basiccontext';
+import sidebar from './sidebar.js';
+import header from './header.js';
+import leftMenu from './leftMenu.js';
+import album from './album.js';
+
 /**
  * @description This module is used to check if elements are visible or not.
  */
@@ -66,3 +73,5 @@ visible.multiselect = function () {
 visible.leftMenu = function () {
 	return !!leftMenu.dom().hasClass("visible");
 };
+
+export default visible;

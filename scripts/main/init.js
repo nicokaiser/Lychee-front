@@ -1,3 +1,23 @@
+import $ from 'jquery';
+import 'mousetrap/plugins/global-bind/mousetrap-global-bind';
+import * as basicModal from '@lychee-org/basicmodal';
+import Mousetrap from 'mousetrap';
+import album from './album.js';
+import api from '../api.js';
+import contextMenu from './contextMenu.js';
+import frame from './frame.js';
+import header from './header.js';
+import leftMenu from './leftMenu.js';
+import lychee from './lychee.js';
+import mapview from './mapview.js';
+import multiselect from './multiselect.js';
+import photo from './photo.js';
+import search from './search.js';
+import sidebar from './sidebar.js';
+import u2f from './u2f.js';
+import view from './view.js';
+import visible from './visible.js';
+
 /**
  * @description This module is used for bindings.
  */

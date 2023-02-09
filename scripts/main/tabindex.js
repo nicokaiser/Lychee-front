@@ -1,3 +1,6 @@
+import $ from 'jquery';
+import lychee from './lychee.js';
+
 /**
  * @description Helper class to manage tabindex
  */
@@ -141,3 +144,5 @@ tabindex.get_next_tab_index = function () {
 tabindex.reset = function () {
 	tabindex.next_tab_index = tabindex.offset_for_header;
 };
+
+export default tabindex;

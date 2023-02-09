@@ -1,3 +1,5 @@
+import lychee from './lychee.js';
+
 /**
  * @typedef {Object.<string, string>} Locale
  * @property {function} printFilesizeLocalized
